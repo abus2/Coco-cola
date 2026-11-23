@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ciao Energy — Zero Bullshit</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="bg" id="bgG"></div><div class="bg" id="bgF"></div><div class="bg" id="bgZ"></div>
+<div id="stage" aria-hidden="false"></div>
+<div id="bar"></div><div id="toast"></div>
+<header><b>CIAO<i>ENERGY</i></b><div class="hr"><button id="snd" aria-label="Toggle sound">SOUND ON</button><button id="findhd">FIND MY FLAVOUR</button><button id="cmphd">COMPARE</button><button id="mixhd">MIX PACK</button><button id="cartbtn" aria-label="Cart">CART <em id="cnt">0</em></button><button id="menubtn">MENU</button></div></header>
+<div id="menu"><button class="x" data-close aria-label="Close">✕</button><div><a data-f="0">The range</a><a data-f=".275">Highlights</a><a data-f=".63">Zero Bullshit</a><a data-f=".78">FAQ</a><a data-f="1">Newsletter</a><a id="findbtn">Find my flavour</a><a id="cmpbtn">Compare</a><a id="mixbtn">Mix pack</a><a id="favbtn">Favourites</a><a id="ordbtn">Orders</a><a id="share">Share</a></div></div>
+<aside id="cart" class="drawer"><div class="dh"><h3>YOUR CART</h3><button class="x" data-close aria-label="Close">✕</button></div><div id="items"></div><div id="ship"></div><label class="subs"><input type="checkbox" id="sub"> Subscribe &amp; save 5% · monthly delivery (demo)</label><button class="mini" id="clr">CLEAR CART</button><div class="promo"><input id="pc" placeholder="PROMO CODE" aria-label="Promo code"><button id="pa">APPLY</button></div><p class="demo">Demo codes: CIAO10 · FREESHIP</p><div class="tot"><span>TOTAL</span><b id="total"></b></div><button id="pay">CHECKOUT</button></aside>
+<div id="mod" class="modal"><div class="mbox wide"><button class="x" data-mclose aria-label="Close">✕</button><div id="mbody"></div></div></div>
+<div id="quiz" class="modal"><div class="mbox"><button class="x" data-qclose aria-label="Close">✕</button><div id="qbody"></div></div></div>
+
+<section id="hero" class="ov">
+  <div class="pedestal"></div>
+  <h1 id="flavor"></h1>
+  <div class="chips" id="chips"></div>
+  <p class="info" id="fdesc"></p>
+  <div id="thumbs"></div>
+  <div class="buy"><span id="price"></span><div class="qty"><b id="fav" aria-label="Favourite" title="Favourite">♡</b><b id="qm" aria-label="Less">−</b><u id="qv">1</u><b id="qp" aria-label="More">+</b></div><div class="packs"><b data-q="1">1 can</b><b data-q="6">6 · −5%</b><b data-q="12">12 · −8%</b><b data-q="24">24 · −12%</b></div><button id="add">ADD TO CART</button></div>
+  <button class="arr l" id="prev" aria-label="Previous">‹</button><button class="arr r" id="next" aria-label="Next">›</button>
+  <div class="slider"><i id="dot"></i></div><button id="autob" aria-label="Pause autoplay">❚❚</button>
+  <small>SCROLL TO DISCOVER</small>
+  <div class="glow" id="glow"></div>
+</section>
+
+<section id="feat" class="ov">
+  <div class="panel"><em id="ftag">01 / 04</em><h2 id="ft"></h2><div id="fp"></div></div>
+  <nav id="fnav"></nav>
+  <div class="hint">↺ Drag to spin the can</div>
+</section>
+
+<section id="zero" class="ov"><h2>ZERO<br>BULLSHIT</h2></section>
+
+<section id="faq" class="ov">
+  <h2>FREQUENTLY<br>ASKED QUESTIONS</h2>
+  <div class="acc">
+    <details><summary>What is in the range?</summary><p>Six flavours: Original Taste, Diet Coke, Zero Sugar, Cherry, Vanilla and Lime, all in a 300 ml can.</p></details>
+    <details><summary>Which cans are sugar free?</summary><p>Diet Coke and Zero Sugar contain no sugar and only 1 kcal per 100 ml. The other four flavours contain 10.6 g of sugars per 100 ml.</p></details>
+    <details><summary>Is it fizzy?</summary><p>Yes, a fine, lively bubble, best served ice cold straight from the can.</p></details>
+    <details><summary>Where can I buy it?</summary><p>Online, in supermarkets and in a selection of bars and gyms.</p></details>
+    <details><summary>Who is it for?</summary><p>Adults. Not recommended for children, pregnant or breastfeeding women, or people sensitive to caffeine (8.7 mg per 100 ml).</p></details>
+  </div>
+</section>
+
+<section id="join" class="ov">
+  <h2>JOIN US</h2>
+  <p>Join the community and be the first to hear our news and new products from Ciao Energy.</p>
+  <form novalidate><input type="email" aria-label="Email address" placeholder="YOUR EMAIL ADDRESS"><button>SUBSCRIBE</button></form>
+  <footer><a href="#">TIKTOK</a><a href="#">LEGAL NOTICE</a><a href="#">TERMS</a><a href="#">PRIVACY POLICY</a><a href="#">INSTAGRAM</a></footer>
+</section>
+
+<div id="scroll"></div>
+<script src="app.js"></script>
+</body></html>
